@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(faded.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color: yellow;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+}
+.load{
+   position: absolute;
+   top: 60%;
+   width: 120px;
+   height: 120px;
+   border: solid 16px rgb(34, 6, 147); 
+   border-radius: 50%;
+   border-top: solid 16px whitesmoke;
+   animation: rotate 1s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
